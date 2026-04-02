@@ -1,0 +1,167 @@
+\documentclass[10pt,twocolumn]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage[portuguese]{babel}
+\usepackage{amsmath}
+\usepackage{booktabs}
+\usepackage{hyperref}
+\usepackage{geometry}
+\usepackage{float}
+\usepackage{array}
+\usepackage{multirow}
+
+\geometry{top=1in, bottom=1in, left=0.75in, right=0.75in}
+
+\hypersetup{colorlinks=true, linkcolor=blue, urlcolor=blue}
+
+\title{\textbf{Classificação de Sentimentos em Texto com KNIME:\\
+Pipeline de Text Mining com Naive Bayes e TF-IDF}}
+
+\author{
+	João Pedro Barbosa \\
+	Programa de Engenharia de Sistemas e Computação - COPPE\\
+	Universidade Federal do Rio de Janeiro\\
+	Centro de Tecnologia, Cidade Universitária, RJ 21945-970 \\
+	\texttt{joaopedro@cos.ufrj.br} \\
+}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Este relatório descreve a construção de um pipeline de classificação de sentimentos em texto utilizando o KNIME Analytics Platform (versão 5.11.0). O dataset utilizado é o \textit{UCI Sentiment Labelled Sentences Dataset}, composto por frases rotuladas provenientes de três fontes: Amazon, IMDB e Yelp. O pipeline cobre leitura e verificação dos dados, pré-processamento textual, representação vetorial via TF-IDF, divisão treino/teste (80/20), treinamento com Naive Bayes e avaliação com métricas de acurácia, precisão, recall e F1. A acurácia obtida foi de 53,6\%, revelando um modelo funcional mas com limitações de generalização.
+\end{abstract}
+
+\section{Dataset}
+
+O dataset é composto por três ficheiros CSV sem cabeçalho:
+
+\begin{itemize}
+  \item \texttt{amazon\_cells\_labelled.csv}: avaliações de produtos
+  \item \texttt{imdb\_labelled.csv}: críticas de filmes
+  \item \texttt{yelp\_labelled.csv}: avaliações de restaurantes
+\end{itemize}
+
+Cada ficheiro contém frases anotadas com label binário: \textbf{1} (positivo) ou \textbf{0} (negativo). Após limpeza, o dataset consolidado ficou com \textbf{1.490 instâncias}, distribuídas de forma equilibrada (50,2\% negativos, 49,8\% positivos).
+
+\section{Descrição do Pipeline}
+
+\subsection{Leitura e Verificação dos Dados}
+
+Foram utilizados três nós \textbf{CSV Reader}, um por ficheiro, configurados com delimitador vírgula, sem cabeçalho e encoding UTF-8. Após cada leitura, um nó \textbf{Column Filter} removeu as colunas vazias geradas pelas vírgulas extras no final de cada linha, retendo apenas a coluna de texto (Column0) e o label (Column1).
+
+Um nó \textbf{Missing Value} foi aplicado para remover linhas nulas antes da concatenação. Os três fluxos foram unidos pelo nó \textbf{Concatenate}.
+
+A consistência dos dados foi verificada com o nó \textbf{Data Explorer}, que identificou 531 linhas com labels inválidos no ficheiro IMDB, causados por um delimitador misto (vírgula e tabulação). Um nó \textbf{Rule Engine} mapeou os valores válidos e um \textbf{Row Filter} eliminou as linhas inválidas.
+
+\subsection{Pré-processamento de Texto}
+
+O pré-processamento foi realizado com os nós de Text Processing do KNIME na seguinte sequência:
+
+\begin{enumerate}
+  \item \textbf{Strings to Document}: converte o texto bruto para o tipo Document do KNIME, com tokenização via OpenNLP WhitespaceTokenizer.
+  \item \textbf{Case Converter}: converte todo o texto para minúsculas.
+  \item \textbf{Stop Word Filter}: remove palavras funcionais sem valor discriminativo (lista built-in para Inglês).
+  \item \textbf{Snowball Stemmer}: reduz palavras à sua raiz morfológica (e.g., ``charger'' $\rightarrow$ ``charger[]'').
+\end{enumerate}
+
+O stemming foi preferido à lemmatização por ser computacionalmente mais eficiente e suficiente para datasets de pequena escala.
+
+\subsection{Representação Vetorial}
+
+Foi escolhida a representação \textbf{TF-IDF} em detrimento do Bag-of-Words simples. O BoW atribui peso igual a todos os termos, incluindo palavras muito frequentes mas pouco informativas. O TF-IDF penaliza esses termos, calculado como:
+
+\begin{equation}
+\text{TF-IDF}(t, d) = \text{TF}(t, d) \times \log\left(\frac{N}{\text{DF}(t)}\right)
+\end{equation}
+
+No KNIME 5.11.0, o cálculo foi feito com dois nós separados (\textbf{TF} e \textbf{IDF}), precedidos pelo \textbf{Bag of Words Creator} que expande cada documento numa linha por termo, resultando em 5.765 linhas.
+
+\subsection{Divisão dos Dados}
+
+O nó \textbf{Table Partitioner} dividiu os dados em 80\% treino e 20\% teste, com random sampling e seed fixo 42 para garantir reprodutibilidade.
+
+\subsection{Treinamento do Modelo}
+
+Foi utilizado o \textbf{Naive Bayes Learner}, com a coluna \textit{label} como target. O Naive Bayes foi escolhido por ser um baseline clássico para classificação de texto, eficiente e interpretável.
+
+\section{Resultados}
+
+\subsection{Matriz de Confusão}
+
+\begin{table}[H]
+\centering
+\caption{Matriz de confusão --- Naive Bayes com TF-IDF}
+\begin{tabular}{cc|cc}
+\toprule
+& & \multicolumn{2}{c}{\textbf{Predito}} \\
+& & \textbf{0} & \textbf{1} \\
+\midrule
+\multirow{2}{*}{\textbf{Real}} & \textbf{0} & 520 & 81 \\
+& \textbf{1} & 454 & 98 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Métricas}
+
+\begin{table}[H]
+\centering
+\caption{Métricas de avaliação por classe}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Classe} & \textbf{Precision} & \textbf{Recall} & \textbf{F1} \\
+\midrule
+0 (negativo) & 0,534 & 0,865 & 0,660 \\
+1 (positivo) & 0,547 & 0,178 & 0,268 \\
+\midrule
+\textbf{Accuracy} & \multicolumn{3}{c}{\textbf{0,536}} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\section{Análise Crítica}
+
+\subsection{O modelo teve desempenho satisfatório?}
+
+Não. A acurácia de 53,6\% é apenas marginalmente superior ao classificador aleatório (50\%). O F1 da classe positiva (0,268) é particularmente baixo, revelando que o modelo falha sistematicamente em identificar reviews positivas.
+
+\subsection{Quais tipos de erro são mais frequentes?}
+
+O erro predominante são os \textbf{Falsos Negativos} (454 casos): o modelo classifica reviews positivas como negativas, evidenciado pelo baixo Recall da classe 1 (17,8\%). Reviews positivas tendem a usar vocabulário mais neutro e moderado, enquanto reviews negativas usam linguagem mais expressiva, mais fácil de capturar pelo Naive Bayes.
+
+\subsection{O pré-processamento influencia o resultado?}
+
+Sim. Foram testadas duas abordagens durante o desenvolvimento:
+
+\begin{table}[H]
+\centering
+\caption{Comparação entre abordagens}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Abordagem} & \textbf{Accuracy} & \textbf{F1 (média)} \\
+\midrule
+Texto bruto & 1,000 & 1,000 \\
+TF-IDF com stemming & 0,536 & 0,464 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+A abordagem com texto bruto apresentou 100\% de acurácia, mas trata-se de overfitting severo --- o modelo memorizou cada frase. A abordagem TF-IDF generaliza, mas com desempenho ainda insuficiente.
+
+\subsection{O modelo está a generalizar ou há overfitting?}
+
+Com TF-IDF, o modelo generaliza mas apresenta \textit{underfitting}. As principais limitações identificadas são: dataset pequeno (1.490 instâncias), heterogeneidade de domínios (Amazon, IMDB, Yelp), e a suposição de independência entre termos do Naive Bayes. Para melhorar o desempenho, recomenda-se o uso de Logistic Regression, SVM ou embeddings como Word2Vec.
+
+\section*{Repositório GitHub}
+
+O workflow KNIME (\texttt{.knwf}) e os datasets estão disponíveis em:\\
+\url{https://github.com/joaopedro-bs/bmt261_knime_binary_classification}
+
+\section*{Declaração de Uso de Inteligência Artificial}
+
+Este trabalho contou com o auxílio da ferramenta de Inteligência Artificial \textbf{Claude} (Anthropic, modelo Claude Sonnet 4.6) durante o processo de escrita. A IA foi utilizada exclusivamente para revisão textual, sugestões de estrutura e ajustes de linguagem, não tendo sido responsável pela concepção do pipeline, pela execução das análises no KNIME, nem pelas decisões técnicas e interpretações apresentadas. Todo o trabalho prático --- construção do fluxo, resolução de problemas, configuração dos nós e análise dos resultados --- foi realizado pelo autor.
+
+\end{document}
