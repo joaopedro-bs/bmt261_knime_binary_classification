@@ -1,0 +1,806 @@
+2026-04-02 10:51:57,436 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-04-02 10:51:57,436 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-04-02 10:51:57,436 : INFO  : main :  : NodeLogger :  :  : # Welcome to KNIME Analytics Platform v5.11.0.v202603030810 (Build March 03, 2026)      #
+2026-04-02 10:51:57,436 : INFO  : main :  : NodeLogger :  :  : # Based on Eclipse, http://www.eclipse.org                                              #
+2026-04-02 10:51:57,436 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-04-02 10:51:57,436 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-04-02 10:51:57,437 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-04-02 10:51:57,437 : INFO  : main :  : NodeLogger :  :  : # Copyright by KNIME AG, Zurich, Switzerland and others.                                #
+2026-04-02 10:51:57,437 : INFO  : main :  : NodeLogger :  :  : # Website: http://www.knime.com                                                         #
+2026-04-02 10:51:57,437 : INFO  : main :  : NodeLogger :  :  : # E-mail: contact@knime.com                                                             #
+2026-04-02 10:51:57,437 : INFO  : main :  : NodeLogger :  :  : #                                                                                       #
+2026-04-02 10:51:57,437 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-04-02 10:51:57,437 : INFO  : main :  : NodeLogger :  :  : # For more details see the KNIME log file:                                              #
+2026-04-02 10:51:57,437 : INFO  : main :  : NodeLogger :  :  : # /Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/knime.log
+2026-04-02 10:51:57,437 : INFO  : main :  : NodeLogger :  :  : #---------------------------------------------------------------------------------------#
+2026-04-02 10:51:57,442 : INFO  : main :  : NodeLogger :  :  : # logging date=Thu Apr 02 10:51:57 BRT 2026
+2026-04-02 10:51:57,442 : INFO  : main :  : NodeLogger :  :  : # java.version=21.0.9
+2026-04-02 10:51:57,443 : INFO  : main :  : NodeLogger :  :  : # java.vm.version=21.0.9+10-LTS
+2026-04-02 10:51:57,443 : INFO  : main :  : NodeLogger :  :  : # java.vendor=Eclipse Adoptium
+2026-04-02 10:51:57,443 : INFO  : main :  : NodeLogger :  :  : # os.name=Mac OS X
+2026-04-02 10:51:57,443 : INFO  : main :  : NodeLogger :  :  : # os.arch=aarch64
+2026-04-02 10:51:57,443 : INFO  : main :  : NodeLogger :  :  : # number of CPUs=8
+2026-04-02 10:51:57,443 : INFO  : main :  : NodeLogger :  :  : # assertions=off
+2026-04-02 10:51:57,456 : INFO  : main :  : NodeLogger :  :  : # host=192.168.1.38
+2026-04-02 10:51:57,458 : INFO  : main :  : NodeLogger :  :  : # username=joaopedrobarbosa
+2026-04-02 10:51:57,458 : INFO  : main :  : NodeLogger :  :  : # max mem=2048MB
+2026-04-02 10:51:57,458 : INFO  : main :  : NodeLogger :  :  : # application=org.knime.product.KNIME_APPLICATION
+2026-04-02 10:51:57,461 : INFO  : main :  : NodeLogger :  :  : # KNID=11-f5885c5429ee5634-01-3647f0a39f819267
+2026-04-02 10:51:57,461 : INFO  : main :  : NodeLogger :  :  : #########################################################################################
+2026-04-02 10:51:54,843 : INFO  : main :  : RegisterBouncyCastleProvider :  :  : Added BouncyCastleProvider to Java Security providers
+2026-04-02 10:51:57,964 : INFO  : main :  : EarlyStartupCondaEnvironmentInstallation :  :  : Starting conda environment initialization during early startup
+2026-04-02 10:51:57,987 : INFO  : main :  : EarlyStartupCondaEnvironmentInstallation :  :  : Conda environment initialization completed successfully
+2026-04-02 10:51:59,735 : INFO  : main :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_database_drivers.txt' does not exist.
+2026-04-02 10:51:59,735 : INFO  : main :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_database_urls.txt' does not exist.
+2026-04-02 10:52:01,761 : INFO  : main :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_org.knime.kerberos.name.txt' does not exist.
+2026-04-02 10:52:01,805 : INFO  : python-gateway-creator-1 :  : ProcessWatchdog :  :  : KNIME Process Watchdog memory limit not configured
+2026-04-02 10:52:01,805 : INFO  : python-gateway-creator-1 :  : ProcessWatchdog :  :  : External process memory watchdog is disabled, because the memory limit is set to -1
+2026-04-02 10:52:03,539 : INFO  : main :  : KNIMECorePlugin :  :  : Setting console view log level to WARN
+2026-04-02 10:52:05,714 : WARN  : python-gateway-creator-1 :  : DefaultPythonGateway :  :  : Python standard output: 
+2026-04-02 10:52:05,715 : WARN  : python-gateway-creator-1 :  : DefaultPythonGateway :  :  : Python standard error: Traceback (most recent call last):
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/__init__.py", line 24, in <module>
+    from . import multiarray
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/multiarray.py", line 10, in <module>
+    from . import overrides
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/overrides.py", line 8, in <module>
+    from numpy.core._multiarray_umath import (
+ImportError: dlopen(/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/_multiarray_umath.cpython-39-darwin.so, 0x0002): Library not loaded: @rpath/libgfortran.5.dylib
+  Referenced from: <C435405B-BFF1-399F-A1EC-BD43418F546A> /Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libopenblas.0.dylib
+  Reason: tried: '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/usr/local/lib/libgfortran.5.dylib' (no such file), '/usr/lib/libgfortran.5.dylib' (no such file, not in dyld cache)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/__init__.py", line 130, in <module>
+    from numpy.__config__ import show as show_config
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/__config__.py", line 4, in <module>
+    from numpy.core._multiarray_umath import (
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/__init__.py", line 50, in <module>
+    raise ImportError(msg)
+ImportError: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.9 from "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/python"
+  * The NumPy version is: "1.26.4"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: dlopen(/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/_multiarray_umath.cpython-39-darwin.so, 0x0002): Library not loaded: @rpath/libgfortran.5.dylib
+  Referenced from: <C435405B-BFF1-399F-A1EC-BD43418F546A> /Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libopenblas.0.dylib
+  Reason: tried: '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/usr/local/lib/libgfortran.5.dylib' (no such file), '/usr/lib/libgfortran.5.dylib' (no such file, not in dyld cache)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.nodes_5.11.0.v202602211520/src/main/python/_node_backend_launcher.py", line 62, in <module>
+    import knime._arrow._table as kat
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_table.py", line 55, in <module>
+    import knime._arrow._backend as _backend
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_backend.py", line 54, in <module>
+    import knime._arrow._types as kat
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_types.py", line 55, in <module>
+    import knime._arrow._dictencoding as kasde
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_dictencoding.py", line 54, in <module>
+    import numpy as np
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/__init__.py", line 135, in <module>
+    raise ImportError(msg) from e
+ImportError: Error importing numpy: you should not try to import numpy from
+        its source directory; please exit the numpy source tree, and relaunch
+        your python interpreter from there.
+
+2026-04-02 10:52:05,883 : WARN  : ForkJoinPool.commonPool-worker-4 :  : DefaultPythonGateway :  :  : Python standard output: 
+2026-04-02 10:52:05,883 : WARN  : ForkJoinPool.commonPool-worker-4 :  : DefaultPythonGateway :  :  : Python standard error: Traceback (most recent call last):
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/__init__.py", line 24, in <module>
+    from . import multiarray
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/multiarray.py", line 10, in <module>
+    from . import overrides
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/overrides.py", line 8, in <module>
+    from numpy.core._multiarray_umath import (
+ImportError: dlopen(/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/_multiarray_umath.cpython-39-darwin.so, 0x0002): Library not loaded: @rpath/libgfortran.5.dylib
+  Referenced from: <C435405B-BFF1-399F-A1EC-BD43418F546A> /Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libopenblas.0.dylib
+  Reason: tried: '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/usr/local/lib/libgfortran.5.dylib' (no such file), '/usr/lib/libgfortran.5.dylib' (no such file, not in dyld cache)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/__init__.py", line 130, in <module>
+    from numpy.__config__ import show as show_config
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/__config__.py", line 4, in <module>
+    from numpy.core._multiarray_umath import (
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/__init__.py", line 50, in <module>
+    raise ImportError(msg)
+ImportError: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.9 from "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/python"
+  * The NumPy version is: "1.26.4"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: dlopen(/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/_multiarray_umath.cpython-39-darwin.so, 0x0002): Library not loaded: @rpath/libgfortran.5.dylib
+  Referenced from: <C435405B-BFF1-399F-A1EC-BD43418F546A> /Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libopenblas.0.dylib
+  Reason: tried: '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/usr/local/lib/libgfortran.5.dylib' (no such file), '/usr/lib/libgfortran.5.dylib' (no such file, not in dyld cache)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.nodes_5.11.0.v202602211520/src/main/python/_node_backend_launcher.py", line 62, in <module>
+    import knime._arrow._table as kat
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_table.py", line 55, in <module>
+    import knime._arrow._backend as _backend
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_backend.py", line 54, in <module>
+    import knime._arrow._types as kat
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_types.py", line 55, in <module>
+    import knime._arrow._dictencoding as kasde
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_dictencoding.py", line 54, in <module>
+    import numpy as np
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/__init__.py", line 135, in <module>
+    raise ImportError(msg) from e
+ImportError: Error importing numpy: you should not try to import numpy from
+        its source directory; please exit the numpy source tree, and relaunch
+        your python interpreter from there.
+
+2026-04-02 10:52:05,883 : ERROR : ForkJoinPool.commonPool-worker-4 :  : PurePythonNodeSetFactory :  :  : Failed to parse Python node extension at path '/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/com.pharmacelera.pharmacelera_extensions_1.1.0.202412030803/src/main/python'
+java.net.ConnectException: Could not connect to the Python process.
+	at org.knime.python3.DefaultPythonGateway.waitForConnection(DefaultPythonGateway.java:282)
+	at org.knime.python3.DefaultPythonGateway.<init>(DefaultPythonGateway.java:205)
+	at org.knime.python3.DefaultPythonGateway.create(DefaultPythonGateway.java:151)
+	at org.knime.python3.FreshPythonGatewayFactory.create(FreshPythonGatewayFactory.java:78)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.takeOrCreateGatewayAndEnqueue(QueuedPythonGatewayFactory.java:277)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.getNextGateway(QueuedPythonGatewayFactory.java:254)
+	at org.knime.python3.QueuedPythonGatewayFactory.create(QueuedPythonGatewayFactory.java:119)
+	at org.knime.python3.nodes.PythonNodeGatewayFactory.create(PythonNodeGatewayFactory.java:138)
+	at org.knime.python3.nodes.PythonExtensionParser.retrieveDynamicInformationFromPython(PythonExtensionParser.java:157)
+	at org.knime.python3.nodes.PythonExtensionParser.parseExtension(PythonExtensionParser.java:126)
+	at org.knime.python3.nodes.PurePythonNodeSetFactory.parseExtension(PurePythonNodeSetFactory.java:113)
+	at org.knime.python3.nodes.PurePythonNodeSetFactory.lambda$3(PurePythonNodeSetFactory.java:107)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.knime.python3.nodes.extension.ExtensionNodeSetFactory.<init>(ExtensionNodeSetFactory.java:123)
+	at org.knime.python3.nodes.PurePythonNodeSetFactory.<init>(PurePythonNodeSetFactory.java:88)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:236)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:1034)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:286)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:65)
+	at org.knime.core.node.extension.NodeSetFactoryExtension.from(NodeSetFactoryExtension.java:274)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.Nodes$CollectorTask.doLeaf(Unknown Source)
+	at java.base/java.util.stream.Nodes$CollectorTask.doLeaf(Unknown Source)
+	at java.base/java.util.stream.AbstractTask.compute(Unknown Source)
+	at java.base/java.util.concurrent.CountedCompleter.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+2026-04-02 10:52:05,888 : INFO  : ForkJoinPool.commonPool-worker-4 :  : PythonExtensionParser :  :  : Trying to load cached extension 'com.searchanalyticsnode.Search-Analytics-Node_1.8.2.202603191618' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/com.searchanalyticsnode.Search-Analytics-Node
+2026-04-02 10:52:05,928 : INFO  : ForkJoinPool.commonPool-worker-4 :  : PythonExtensionParser :  :  : Trying to load cached extension 'graudata.mdh_extension_1.1.3.202602251351' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/graudata.mdh_extension
+2026-04-02 10:52:05,949 : INFO  : ForkJoinPool.commonPool-worker-4 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.datanautics.DataNautics-Fin_0.1.0.202602251227' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.datanautics.DataNautics-Fin
+2026-04-02 10:52:05,969 : INFO  : ForkJoinPool.commonPool-worker-4 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.giskard_5.11.0.v202602191750' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.giskard
+2026-04-02 10:52:05,974 : INFO  : ForkJoinPool.commonPool-worker-4 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.google_ads_ext_5.11.0.v202602191750' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.google_ads_ext
+2026-04-02 10:52:05,989 : INFO  : ForkJoinPool.commonPool-worker-4 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.llm_5.11.0.v202602211658' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.llm
+2026-04-02 10:52:06,030 : INFO  : ForkJoinPool.commonPool-worker-4 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.presidio_5.11.0.v202602201253' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.presidio
+2026-04-02 10:52:06,033 : INFO  : ForkJoinPool.commonPool-worker-4 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.sklearn_5.11.0.v202602191750' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.sklearn
+2026-04-02 10:52:06,038 : INFO  : ForkJoinPool.commonPool-worker-4 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.web_5.11.0.v202602191750' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.web
+2026-04-02 10:52:06,042 : INFO  : ForkJoinPool.commonPool-worker-4 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.timeseries-analysis_5.11.0.v202602191750' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.timeseries-analysis
+2026-04-02 10:52:06,047 : INFO  : ForkJoinPool.commonPool-worker-4 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.pm4knime.python_3.0.0.202603121025' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.pm4knime.python
+2026-04-02 10:52:06,048 : WARN  : Worker-1: Workflow Coach loader :  : DefaultPythonGateway :  :  : Python standard output: 
+2026-04-02 10:52:06,048 : WARN  : Worker-1: Workflow Coach loader :  : DefaultPythonGateway :  :  : Python standard error: Traceback (most recent call last):
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/__init__.py", line 24, in <module>
+    from . import multiarray
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/multiarray.py", line 10, in <module>
+    from . import overrides
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/overrides.py", line 8, in <module>
+    from numpy.core._multiarray_umath import (
+ImportError: dlopen(/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/_multiarray_umath.cpython-39-darwin.so, 0x0002): Library not loaded: @rpath/libgfortran.5.dylib
+  Referenced from: <C435405B-BFF1-399F-A1EC-BD43418F546A> /Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libopenblas.0.dylib
+  Reason: tried: '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/usr/local/lib/libgfortran.5.dylib' (no such file), '/usr/lib/libgfortran.5.dylib' (no such file, not in dyld cache)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/__init__.py", line 130, in <module>
+    from numpy.__config__ import show as show_config
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/__config__.py", line 4, in <module>
+    from numpy.core._multiarray_umath import (
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/__init__.py", line 50, in <module>
+    raise ImportError(msg)
+ImportError: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.9 from "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/python"
+  * The NumPy version is: "1.26.4"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: dlopen(/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/_multiarray_umath.cpython-39-darwin.so, 0x0002): Library not loaded: @rpath/libgfortran.5.dylib
+  Referenced from: <C435405B-BFF1-399F-A1EC-BD43418F546A> /Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libopenblas.0.dylib
+  Reason: tried: '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/usr/local/lib/libgfortran.5.dylib' (no such file), '/usr/lib/libgfortran.5.dylib' (no such file, not in dyld cache)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.nodes_5.11.0.v202602211520/src/main/python/_node_backend_launcher.py", line 62, in <module>
+    import knime._arrow._table as kat
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_table.py", line 55, in <module>
+    import knime._arrow._backend as _backend
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_backend.py", line 54, in <module>
+    import knime._arrow._types as kat
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_types.py", line 55, in <module>
+    import knime._arrow._dictencoding as kasde
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_dictencoding.py", line 54, in <module>
+    import numpy as np
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/__init__.py", line 135, in <module>
+    raise ImportError(msg) from e
+ImportError: Error importing numpy: you should not try to import numpy from
+        its source directory; please exit the numpy source tree, and relaunch
+        your python interpreter from there.
+
+2026-04-02 10:52:06,048 : ERROR : Worker-1: Workflow Coach loader :  : PurePythonNodeSetFactory :  :  : Failed to parse Python node extension at path '/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/com.pharmacelera.pharmacelera_extensions_1.1.0.202412030803/src/main/python'
+java.net.ConnectException: Could not connect to the Python process.
+	at org.knime.python3.DefaultPythonGateway.waitForConnection(DefaultPythonGateway.java:282)
+	at org.knime.python3.DefaultPythonGateway.<init>(DefaultPythonGateway.java:205)
+	at org.knime.python3.DefaultPythonGateway.create(DefaultPythonGateway.java:151)
+	at org.knime.python3.FreshPythonGatewayFactory.create(FreshPythonGatewayFactory.java:78)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.takeOrCreateGatewayAndEnqueue(QueuedPythonGatewayFactory.java:277)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.getNextGateway(QueuedPythonGatewayFactory.java:254)
+	at org.knime.python3.QueuedPythonGatewayFactory.create(QueuedPythonGatewayFactory.java:119)
+	at org.knime.python3.nodes.PythonNodeGatewayFactory.create(PythonNodeGatewayFactory.java:138)
+	at org.knime.python3.nodes.PythonExtensionParser.retrieveDynamicInformationFromPython(PythonExtensionParser.java:157)
+	at org.knime.python3.nodes.PythonExtensionParser.parseExtension(PythonExtensionParser.java:126)
+	at org.knime.python3.nodes.PurePythonNodeSetFactory.parseExtension(PurePythonNodeSetFactory.java:113)
+	at org.knime.python3.nodes.PurePythonNodeSetFactory.lambda$3(PurePythonNodeSetFactory.java:107)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.knime.python3.nodes.extension.ExtensionNodeSetFactory.<init>(ExtensionNodeSetFactory.java:123)
+	at org.knime.python3.nodes.PurePythonNodeSetFactory.<init>(PurePythonNodeSetFactory.java:88)
+	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Unknown Source)
+	at java.base/java.lang.reflect.Constructor.newInstance(Unknown Source)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:236)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:1034)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:286)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:65)
+	at org.knime.workbench.repository.RepositoryManager.createFactory(RepositoryManager.java:294)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(Unknown Source)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.collect(Unknown Source)
+	at org.knime.workbench.repository.RepositoryManager.getCategoryEntriesFromExtPoint(RepositoryManager.java:341)
+	at org.knime.workbench.repository.RepositoryManager.readCategories(RepositoryManager.java:303)
+	at org.knime.workbench.repository.RepositoryManager.readRepository(RepositoryManager.java:172)
+	at org.knime.workbench.repository.RepositoryManager.getRoot(RepositoryManager.java:570)
+	at org.knime.workbench.repository.RepositoryManager.getRoot(RepositoryManager.java:583)
+	at org.knime.workbench.workflowcoach.ui.WorkflowCoachView$3.run(WorkflowCoachView.java:299)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2026-04-02 10:52:06,049 : INFO  : Worker-1: Workflow Coach loader :  : PythonExtensionParser :  :  : Trying to load cached extension 'com.searchanalyticsnode.Search-Analytics-Node_1.8.2.202603191618' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/com.searchanalyticsnode.Search-Analytics-Node
+2026-04-02 10:52:06,052 : INFO  : Worker-1: Workflow Coach loader :  : PythonExtensionParser :  :  : Trying to load cached extension 'graudata.mdh_extension_1.1.3.202602251351' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/graudata.mdh_extension
+2026-04-02 10:52:06,053 : INFO  : ForkJoinPool.commonPool-worker-4 :  : PythonExtensionParser :  :  : Trying to load cached extension 'sdl.harvard.geospatial_2.0.0.202602251244' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/sdl.harvard.geospatial
+2026-04-02 10:52:06,060 : INFO  : Worker-1: Workflow Coach loader :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.datanautics.DataNautics-Fin_0.1.0.202602251227' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.datanautics.DataNautics-Fin
+2026-04-02 10:52:06,072 : INFO  : Worker-1: Workflow Coach loader :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.giskard_5.11.0.v202602191750' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.giskard
+2026-04-02 10:52:06,074 : INFO  : Worker-1: Workflow Coach loader :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.google_ads_ext_5.11.0.v202602191750' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.google_ads_ext
+2026-04-02 10:52:06,079 : INFO  : Worker-1: Workflow Coach loader :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.llm_5.11.0.v202602211658' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.llm
+2026-04-02 10:52:06,114 : INFO  : Worker-1: Workflow Coach loader :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.presidio_5.11.0.v202602201253' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.presidio
+2026-04-02 10:52:06,117 : INFO  : Worker-1: Workflow Coach loader :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.sklearn_5.11.0.v202602191750' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.sklearn
+2026-04-02 10:52:06,121 : INFO  : Worker-1: Workflow Coach loader :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.web_5.11.0.v202602191750' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.web
+2026-04-02 10:52:06,126 : INFO  : Worker-1: Workflow Coach loader :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.timeseries-analysis_5.11.0.v202602191750' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.timeseries-analysis
+2026-04-02 10:52:06,134 : INFO  : Worker-1: Workflow Coach loader :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.pm4knime.python_3.0.0.202603121025' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.pm4knime.python
+2026-04-02 10:52:06,140 : INFO  : Worker-1: Workflow Coach loader :  : PythonExtensionParser :  :  : Trying to load cached extension 'sdl.harvard.geospatial_2.0.0.202602251244' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/sdl.harvard.geospatial
+2026-04-02 10:52:06,141 : ERROR : KNIME-Worker-0 :  : PurePythonNodeSetFactory :  :  : Failed to parse Python node extension at path '/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/com.pharmacelera.pharmacelera_extensions_1.1.0.202412030803/src/main/python'
+java.net.ConnectException: Could not connect to the Python process.
+	at org.knime.python3.DefaultPythonGateway.waitForConnection(DefaultPythonGateway.java:282)
+	at org.knime.python3.DefaultPythonGateway.<init>(DefaultPythonGateway.java:205)
+	at org.knime.python3.DefaultPythonGateway.create(DefaultPythonGateway.java:151)
+	at org.knime.python3.FreshPythonGatewayFactory.create(FreshPythonGatewayFactory.java:78)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.enqueueGateway(QueuedPythonGatewayFactory.java:302)
+	at org.knime.python3.QueuedPythonGatewayFactory$PythonGatewayQueue.lambda$1(QueuedPythonGatewayFactory.java:268)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2026-04-02 10:52:06,144 : INFO  : KNIME-Worker-0 :  : PythonExtensionParser :  :  : Trying to load cached extension 'com.searchanalyticsnode.Search-Analytics-Node_1.8.2.202603191618' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/com.searchanalyticsnode.Search-Analytics-Node
+2026-04-02 10:52:06,161 : INFO  : KNIME-Worker-0 :  : PythonExtensionParser :  :  : Trying to load cached extension 'graudata.mdh_extension_1.1.3.202602251351' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/graudata.mdh_extension
+2026-04-02 10:52:06,171 : INFO  : KNIME-Worker-0 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.datanautics.DataNautics-Fin_0.1.0.202602251227' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.datanautics.DataNautics-Fin
+2026-04-02 10:52:06,180 : INFO  : KNIME-Worker-0 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.giskard_5.11.0.v202602191750' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.giskard
+2026-04-02 10:52:06,182 : INFO  : KNIME-Worker-0 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.google_ads_ext_5.11.0.v202602191750' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.google_ads_ext
+2026-04-02 10:52:06,188 : INFO  : KNIME-Worker-0 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.llm_5.11.0.v202602211658' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.llm
+2026-04-02 10:52:06,218 : INFO  : KNIME-Worker-0 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.presidio_5.11.0.v202602201253' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.presidio
+2026-04-02 10:52:06,220 : INFO  : KNIME-Worker-0 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.sklearn_5.11.0.v202602191750' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.sklearn
+2026-04-02 10:52:06,223 : INFO  : KNIME-Worker-0 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.python.web_5.11.0.v202602191750' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.python.web
+2026-04-02 10:52:06,227 : INFO  : KNIME-Worker-0 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.knime.timeseries-analysis_5.11.0.v202602191750' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.knime.timeseries-analysis
+2026-04-02 10:52:06,230 : INFO  : KNIME-Worker-0 :  : PythonExtensionParser :  :  : Trying to load cached extension 'org.pm4knime.python_3.0.0.202603121025' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/org.pm4knime.python
+2026-04-02 10:52:06,234 : INFO  : KNIME-Worker-0 :  : PythonExtensionParser :  :  : Trying to load cached extension 'sdl.harvard.geospatial_2.0.0.202602251244' from /Applications/KNIME 5.11.0.app/Contents/Eclipse/configuration/sdl.harvard.geospatial
+2026-04-02 10:52:06,247 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard output: 
+2026-04-02 10:52:06,247 : WARN  : python-gateway-creator-0 :  : DefaultPythonGateway :  :  : Python standard error: Traceback (most recent call last):
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/__init__.py", line 24, in <module>
+    from . import multiarray
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/multiarray.py", line 10, in <module>
+    from . import overrides
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/overrides.py", line 8, in <module>
+    from numpy.core._multiarray_umath import (
+ImportError: dlopen(/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/_multiarray_umath.cpython-39-darwin.so, 0x0002): Library not loaded: @rpath/libgfortran.5.dylib
+  Referenced from: <C435405B-BFF1-399F-A1EC-BD43418F546A> /Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libopenblas.0.dylib
+  Reason: tried: '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/usr/local/lib/libgfortran.5.dylib' (no such file), '/usr/lib/libgfortran.5.dylib' (no such file, not in dyld cache)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/__init__.py", line 130, in <module>
+    from numpy.__config__ import show as show_config
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/__config__.py", line 4, in <module>
+    from numpy.core._multiarray_umath import (
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/__init__.py", line 50, in <module>
+    raise ImportError(msg)
+ImportError: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.9 from "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/python"
+  * The NumPy version is: "1.26.4"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: dlopen(/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/_multiarray_umath.cpython-39-darwin.so, 0x0002): Library not loaded: @rpath/libgfortran.5.dylib
+  Referenced from: <C435405B-BFF1-399F-A1EC-BD43418F546A> /Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libopenblas.0.dylib
+  Reason: tried: '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/usr/local/lib/libgfortran.5.dylib' (no such file), '/usr/lib/libgfortran.5.dylib' (no such file, not in dyld cache)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.nodes_5.11.0.v202602211520/src/main/python/_node_backend_launcher.py", line 62, in <module>
+    import knime._arrow._table as kat
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_table.py", line 55, in <module>
+    import knime._arrow._backend as _backend
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_backend.py", line 54, in <module>
+    import knime._arrow._types as kat
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_types.py", line 55, in <module>
+    import knime._arrow._dictencoding as kasde
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_dictencoding.py", line 54, in <module>
+    import numpy as np
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/__init__.py", line 135, in <module>
+    raise ImportError(msg) from e
+ImportError: Error importing numpy: you should not try to import numpy from
+        its source directory; please exit the numpy source tree, and relaunch
+        your python interpreter from there.
+
+2026-04-02 10:52:06,358 : ERROR : Worker-1: Workflow Coach loader :  : RepositoryManager :  :  : Category 'schedule_functions' from plugin 'org.datanautics.DataNautics-Fin' could not be created in parent path '/community/financial_functions/'.
+java.lang.IllegalArgumentException: The segment 'financial_functions' in path 'community/financial_functions/' does not exist!
+	at org.knime.workbench.repository.RepositoryFactory.findParentContainer(RepositoryFactory.java:317)
+	at org.knime.workbench.repository.RepositoryFactory.createCategory(RepositoryFactory.java:245)
+	at org.knime.workbench.repository.RepositoryManager.readCategories(RepositoryManager.java:314)
+	at org.knime.workbench.repository.RepositoryManager.readRepository(RepositoryManager.java:172)
+	at org.knime.workbench.repository.RepositoryManager.getRoot(RepositoryManager.java:570)
+	at org.knime.workbench.repository.RepositoryManager.getRoot(RepositoryManager.java:583)
+	at org.knime.workbench.workflowcoach.ui.WorkflowCoachView$3.run(WorkflowCoachView.java:299)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2026-04-02 10:52:06,427 : WARN  : python-gateway-creator-1 :  : DefaultPythonGateway :  :  : Python standard output: 
+2026-04-02 10:52:06,427 : WARN  : python-gateway-creator-1 :  : DefaultPythonGateway :  :  : Python standard error: Traceback (most recent call last):
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/__init__.py", line 24, in <module>
+    from . import multiarray
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/multiarray.py", line 10, in <module>
+    from . import overrides
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/overrides.py", line 8, in <module>
+    from numpy.core._multiarray_umath import (
+ImportError: dlopen(/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/_multiarray_umath.cpython-39-darwin.so, 0x0002): Library not loaded: @rpath/libgfortran.5.dylib
+  Referenced from: <C435405B-BFF1-399F-A1EC-BD43418F546A> /Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libopenblas.0.dylib
+  Reason: tried: '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/usr/local/lib/libgfortran.5.dylib' (no such file), '/usr/lib/libgfortran.5.dylib' (no such file, not in dyld cache)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/__init__.py", line 130, in <module>
+    from numpy.__config__ import show as show_config
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/__config__.py", line 4, in <module>
+    from numpy.core._multiarray_umath import (
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/__init__.py", line 50, in <module>
+    raise ImportError(msg)
+ImportError: 
+
+IMPORTANT: PLEASE READ THIS FOR ADVICE ON HOW TO SOLVE THIS ISSUE!
+
+Importing the numpy C-extensions failed. This error can happen for
+many reasons, often due to issues with your setup or how NumPy was
+installed.
+
+We have compiled some common reasons and troubleshooting tips at:
+
+    https://numpy.org/devdocs/user/troubleshooting-importerror.html
+
+Please note and check the following:
+
+  * The Python version is: Python3.9 from "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/python"
+  * The NumPy version is: "1.26.4"
+
+and make sure that they are the versions you expect.
+Please carefully study the documentation linked above for further help.
+
+Original error was: dlopen(/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/_multiarray_umath.cpython-39-darwin.so, 0x0002): Library not loaded: @rpath/libgfortran.5.dylib
+  Referenced from: <C435405B-BFF1-399F-A1EC-BD43418F546A> /Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libopenblas.0.dylib
+  Reason: tried: '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/core/../../../../libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/bin/../lib/libgfortran.5.dylib' (duplicate LC_RPATH '@loader_path'), '/usr/local/lib/libgfortran.5.dylib' (no such file), '/usr/lib/libgfortran.5.dylib' (no such file, not in dyld cache)
+
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.nodes_5.11.0.v202602211520/src/main/python/_node_backend_launcher.py", line 62, in <module>
+    import knime._arrow._table as kat
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_table.py", line 55, in <module>
+    import knime._arrow._backend as _backend
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_backend.py", line 54, in <module>
+    import knime._arrow._types as kat
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_types.py", line 55, in <module>
+    import knime._arrow._dictencoding as kasde
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/plugins/org.knime.python3.arrow_5.11.0.v202602211520/src/main/python/knime/_arrow/_dictencoding.py", line 54, in <module>
+    import numpy as np
+  File "/Applications/KNIME 5.11.0.app/Contents/Eclipse/bundling/envs/com_pharmacelera_pharmacelera_extensions/lib/python3.9/site-packages/numpy/__init__.py", line 135, in <module>
+    raise ImportError(msg) from e
+ImportError: Error importing numpy: you should not try to import numpy from
+        its source directory; please exit the numpy source tree, and relaunch
+        your python interpreter from there.
+
+2026-04-02 10:52:07,191 : WARN  : Node Repository Initializer :  : NodeFactoryExtension :  :  : Could not create node factory
+org.knime.core.node.extension.InvalidNodeFactoryExtensionException: Node 'se.redfield.textprocessing.nodes.ner.SpacyNerTaggerNodeFactory' from plugin 'se.redfield.textprocessing' could not be created.
+	at org.knime.core.node.extension.NodeFactoryExtension.createFactory(NodeFactoryExtension.java:223)
+	at org.knime.core.node.extension.NodeFactoryExtension.getFactory(NodeFactoryExtension.java:177)
+	at org.knime.core.node.extension.NodeFactoryExtension.getNodeFactory(NodeFactoryExtension.java:185)
+	at org.knime.core.node.extension.NodeSpec.of(NodeSpec.java:164)
+	at org.knime.core.node.extension.NodeSpecCache$Initializer.computeNodeSpecIgnoringErrors(NodeSpecCache.java:190)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.knime.core.node.extension.NodeSpecCache$Initializer.run(NodeSpecCache.java:168)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.eclipse.core.runtime.CoreException: Plug-in se.redfield.textprocessing was unable to load class se.redfield.textprocessing.nodes.ner.SpacyNerTaggerNodeFactory.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:245)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:228)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:1034)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:286)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:65)
+	at org.knime.core.node.extension.NodeFactoryExtension.createFactory(NodeFactoryExtension.java:202)
+	... 14 more
+Caused by: java.lang.ClassNotFoundException: se.redfield.textprocessing.nodes.ner.SpacyNerTaggerNodeFactory cannot be found by se.redfield.textprocessing_1.2.0.202602251159
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:567)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:438)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:195)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:652)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:226)
+	... 18 more
+2026-04-02 10:52:07,197 : WARN  : Node Repository Initializer :  : NodeFactoryExtension :  :  : Could not create node factory
+org.knime.core.node.extension.InvalidNodeFactoryExtensionException: Node 'se.redfield.textprocessing.nodes.vectorizer.SpacyVectorizerNodeFactory' from plugin 'se.redfield.textprocessing' could not be created.
+	at org.knime.core.node.extension.NodeFactoryExtension.createFactory(NodeFactoryExtension.java:223)
+	at org.knime.core.node.extension.NodeFactoryExtension.getFactory(NodeFactoryExtension.java:177)
+	at org.knime.core.node.extension.NodeFactoryExtension.getNodeFactory(NodeFactoryExtension.java:185)
+	at org.knime.core.node.extension.NodeSpec.of(NodeSpec.java:164)
+	at org.knime.core.node.extension.NodeSpecCache$Initializer.computeNodeSpecIgnoringErrors(NodeSpecCache.java:190)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.knime.core.node.extension.NodeSpecCache$Initializer.run(NodeSpecCache.java:168)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.eclipse.core.runtime.CoreException: Plug-in se.redfield.textprocessing was unable to load class se.redfield.textprocessing.nodes.vectorizer.SpacyVectorizerNodeFactory.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:245)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:228)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:1034)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:286)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:65)
+	at org.knime.core.node.extension.NodeFactoryExtension.createFactory(NodeFactoryExtension.java:202)
+	... 14 more
+Caused by: java.lang.ClassNotFoundException: se.redfield.textprocessing.nodes.vectorizer.SpacyVectorizerNodeFactory cannot be found by se.redfield.textprocessing_1.2.0.202602251159
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:567)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:438)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:195)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:652)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:226)
+	... 18 more
+2026-04-02 10:52:07,202 : WARN  : Node Repository Initializer :  : NodeFactoryExtension :  :  : Could not create node factory
+org.knime.core.node.extension.InvalidNodeFactoryExtensionException: Node 'se.redfield.textprocessing.nodes.pos.SpacyPosTaggerNodeFactory' from plugin 'se.redfield.textprocessing' could not be created.
+	at org.knime.core.node.extension.NodeFactoryExtension.createFactory(NodeFactoryExtension.java:223)
+	at org.knime.core.node.extension.NodeFactoryExtension.getFactory(NodeFactoryExtension.java:177)
+	at org.knime.core.node.extension.NodeFactoryExtension.getNodeFactory(NodeFactoryExtension.java:185)
+	at org.knime.core.node.extension.NodeSpec.of(NodeSpec.java:164)
+	at org.knime.core.node.extension.NodeSpecCache$Initializer.computeNodeSpecIgnoringErrors(NodeSpecCache.java:190)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.knime.core.node.extension.NodeSpecCache$Initializer.run(NodeSpecCache.java:168)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.eclipse.core.runtime.CoreException: Plug-in se.redfield.textprocessing was unable to load class se.redfield.textprocessing.nodes.pos.SpacyPosTaggerNodeFactory.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:245)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:228)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:1034)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:286)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:65)
+	at org.knime.core.node.extension.NodeFactoryExtension.createFactory(NodeFactoryExtension.java:202)
+	... 14 more
+Caused by: java.lang.ClassNotFoundException: se.redfield.textprocessing.nodes.pos.SpacyPosTaggerNodeFactory cannot be found by se.redfield.textprocessing_1.2.0.202602251159
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:567)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:438)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:195)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:652)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:226)
+	... 18 more
+2026-04-02 10:52:07,205 : WARN  : Node Repository Initializer :  : NodeFactoryExtension :  :  : Could not create node factory
+org.knime.core.node.extension.InvalidNodeFactoryExtensionException: Node 'se.redfield.textprocessing.nodes.morph.SpacyMorphologizerNodeFactory' from plugin 'se.redfield.textprocessing' could not be created.
+	at org.knime.core.node.extension.NodeFactoryExtension.createFactory(NodeFactoryExtension.java:223)
+	at org.knime.core.node.extension.NodeFactoryExtension.getFactory(NodeFactoryExtension.java:177)
+	at org.knime.core.node.extension.NodeFactoryExtension.getNodeFactory(NodeFactoryExtension.java:185)
+	at org.knime.core.node.extension.NodeSpec.of(NodeSpec.java:164)
+	at org.knime.core.node.extension.NodeSpecCache$Initializer.computeNodeSpecIgnoringErrors(NodeSpecCache.java:190)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.knime.core.node.extension.NodeSpecCache$Initializer.run(NodeSpecCache.java:168)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.eclipse.core.runtime.CoreException: Plug-in se.redfield.textprocessing was unable to load class se.redfield.textprocessing.nodes.morph.SpacyMorphologizerNodeFactory.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:245)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:228)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:1034)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:286)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:65)
+	at org.knime.core.node.extension.NodeFactoryExtension.createFactory(NodeFactoryExtension.java:202)
+	... 14 more
+Caused by: java.lang.ClassNotFoundException: se.redfield.textprocessing.nodes.morph.SpacyMorphologizerNodeFactory cannot be found by se.redfield.textprocessing_1.2.0.202602251159
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:567)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:438)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:195)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:652)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:226)
+	... 18 more
+2026-04-02 10:52:07,205 : WARN  : Node Repository Initializer :  : NodeFactoryExtension :  :  : Could not create node factory
+org.knime.core.node.extension.InvalidNodeFactoryExtensionException: Node 'se.redfield.textprocessing.nodes.lemmatizer.SpacyLemmatizerNodeFactory' from plugin 'se.redfield.textprocessing' could not be created.
+	at org.knime.core.node.extension.NodeFactoryExtension.createFactory(NodeFactoryExtension.java:223)
+	at org.knime.core.node.extension.NodeFactoryExtension.getFactory(NodeFactoryExtension.java:177)
+	at org.knime.core.node.extension.NodeFactoryExtension.getNodeFactory(NodeFactoryExtension.java:185)
+	at org.knime.core.node.extension.NodeSpec.of(NodeSpec.java:164)
+	at org.knime.core.node.extension.NodeSpecCache$Initializer.computeNodeSpecIgnoringErrors(NodeSpecCache.java:190)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.knime.core.node.extension.NodeSpecCache$Initializer.run(NodeSpecCache.java:168)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.eclipse.core.runtime.CoreException: Plug-in se.redfield.textprocessing was unable to load class se.redfield.textprocessing.nodes.lemmatizer.SpacyLemmatizerNodeFactory.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:245)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:228)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:1034)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:286)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:65)
+	at org.knime.core.node.extension.NodeFactoryExtension.createFactory(NodeFactoryExtension.java:202)
+	... 14 more
+Caused by: java.lang.ClassNotFoundException: se.redfield.textprocessing.nodes.lemmatizer.SpacyLemmatizerNodeFactory cannot be found by se.redfield.textprocessing_1.2.0.202602251159
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:567)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:438)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:195)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:652)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:226)
+	... 18 more
+2026-04-02 10:52:07,205 : WARN  : Node Repository Initializer :  : NodeFactoryExtension :  :  : Could not create node factory
+org.knime.core.node.extension.InvalidNodeFactoryExtensionException: Node 'se.redfield.textprocessing.nodes.tokenizer.SpacyTokenizerNodeFactory' from plugin 'se.redfield.textprocessing' could not be created.
+	at org.knime.core.node.extension.NodeFactoryExtension.createFactory(NodeFactoryExtension.java:223)
+	at org.knime.core.node.extension.NodeFactoryExtension.getFactory(NodeFactoryExtension.java:177)
+	at org.knime.core.node.extension.NodeFactoryExtension.getNodeFactory(NodeFactoryExtension.java:185)
+	at org.knime.core.node.extension.NodeSpec.of(NodeSpec.java:164)
+	at org.knime.core.node.extension.NodeSpecCache$Initializer.computeNodeSpecIgnoringErrors(NodeSpecCache.java:190)
+	at java.base/java.util.stream.ReferencePipeline$7$1.accept(Unknown Source)
+	at java.base/java.util.ArrayList$ArrayListSpliterator.forEachRemaining(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.ForEachOps$ForEachOp$OfRef.evaluateSequential(Unknown Source)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(Unknown Source)
+	at java.base/java.util.stream.ReferencePipeline.forEach(Unknown Source)
+	at org.knime.core.node.extension.NodeSpecCache$Initializer.run(NodeSpecCache.java:168)
+	at java.base/java.lang.Thread.run(Unknown Source)
+Caused by: org.eclipse.core.runtime.CoreException: Plug-in se.redfield.textprocessing was unable to load class se.redfield.textprocessing.nodes.tokenizer.SpacyTokenizerNodeFactory.
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.throwException(RegistryStrategyOSGI.java:245)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:228)
+	at org.eclipse.core.internal.registry.ExtensionRegistry.createExecutableExtension(ExtensionRegistry.java:1034)
+	at org.eclipse.core.internal.registry.ConfigurationElement.createExecutableExtension(ConfigurationElement.java:286)
+	at org.eclipse.core.internal.registry.ConfigurationElementHandle.createExecutableExtension(ConfigurationElementHandle.java:65)
+	at org.knime.core.node.extension.NodeFactoryExtension.createFactory(NodeFactoryExtension.java:202)
+	... 14 more
+Caused by: java.lang.ClassNotFoundException: se.redfield.textprocessing.nodes.tokenizer.SpacyTokenizerNodeFactory cannot be found by se.redfield.textprocessing_1.2.0.202602251159
+	at org.eclipse.osgi.internal.loader.BundleLoader.generateException(BundleLoader.java:567)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass0(BundleLoader.java:562)
+	at org.eclipse.osgi.internal.loader.BundleLoader.findClass(BundleLoader.java:438)
+	at org.eclipse.osgi.internal.loader.ModuleClassLoader.loadClass(ModuleClassLoader.java:195)
+	at java.base/java.lang.ClassLoader.loadClass(Unknown Source)
+	at org.eclipse.osgi.internal.framework.EquinoxBundle.loadClass(EquinoxBundle.java:652)
+	at org.eclipse.core.internal.registry.osgi.RegistryStrategyOSGI.createExecutableExtension(RegistryStrategyOSGI.java:226)
+	... 18 more
+2026-04-02 10:52:08,797 : INFO  : Worker-1: Workflow Coach loader :  : RPreferenceInitializer :  :  : Using system R installation at null
+2026-04-02 10:52:09,794 : INFO  : Worker-1: Workflow Coach loader :  : MovingAggregationNodeFactory :  :  : Modern dialog for Moving Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-04-02 10:52:10,141 : INFO  : Worker-1: Workflow Coach loader :  : GroupByNodeFactory :  :  : Modern dialog for GroupBy node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-04-02 10:52:10,227 : INFO  : Worker-1: Workflow Coach loader :  : ColumnAggregatorNodeFactory :  :  : Modern dialog for Column Aggregator node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-04-02 10:52:10,381 : INFO  : main :  : KNIMECorePlugin :  :  : Setting console view log level to OFF
+2026-04-02 10:52:10,426 : INFO  : Worker-1: Workflow Coach loader :  : Pivot2NodeFactory :  :  : Modern dialog for Pivot node can be enabled via system property "org.knime.base.node.preproc.groupby.dialog". Note: This property will be removed in a future version.
+
+2026-04-02 10:52:12,532 : INFO  : main :  : KnimeBrowserView :  :  : %cinfo%c Injecting global logger 
+      background: #00BCD4;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      (source: https://org.knime.ui.java/assets/index-qa2z6KdO.js; line: 105)
+2026-04-02 10:52:13,088 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_string2date-formats.txt' does not exist.
+2026-04-02 10:52:13,099 : INFO  : Worker-1: Workflow Coach loader :  : StringHistory : File Reader (deprecated) : 2:4:4 : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_ASCIIfile.txt' does not exist.
+2026-04-02 10:52:13,325 : INFO  : Worker-1: Workflow Coach loader :  : NodeRecommendationManager :  :  : Loading node recommendations from <org.knime.core.ui.workflowcoach.data.PrefsTripleProvider>
+2026-04-02 10:52:13,325 : INFO  : Worker-1: Workflow Coach loader :  : NodeRecommendationManager :  :  : Loading node recommendations from <org.knime.workbench.workflowcoach.data.CommunityTripleProvider>
+2026-04-02 10:52:13,552 : INFO  : Worker-1: Workflow Coach loader :  : NodeRecommendationManager :  :  : Loading node recommendations from <org.knime.workbench.workflowcoach.local.data.WorkspaceTripleProvider>
+2026-04-02 10:52:13,552 : INFO  : Worker-1: Workflow Coach loader :  : NodeRecommendationManager :  :  : Successfully (re-)loaded all node recommendations available
+2026-04-02 10:52:14,760 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_jfc-date-formats.txt' does not exist.
+2026-04-02 10:52:15,103 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_mol_parser_types.txt' does not exist.
+2026-04-02 10:52:15,757 : INFO  : Node Repository Initializer :  : HyphenationPatternFactory :  :  : Registering Hyphenation Patterns ...
+2026-04-02 10:52:15,810 : INFO  : Node Repository Initializer :  : TagFactory :  :  : Added TagBuilder: class org.knime.ext.textprocessing.data.PartOfSpeechTag
+2026-04-02 10:52:15,810 : INFO  : Node Repository Initializer :  : TagFactory :  :  : Added TagBuilder: class org.knime.ext.textprocessing.data.BiomedicalNeTag
+2026-04-02 10:52:15,811 : INFO  : Node Repository Initializer :  : TagFactory :  :  : Added TagBuilder: class org.knime.ext.textprocessing.data.NamedEntityTag
+2026-04-02 10:52:15,811 : INFO  : Node Repository Initializer :  : TagFactory :  :  : Added TagBuilder: class org.knime.ext.textprocessing.data.MultiwordTermTag
+2026-04-02 10:52:15,811 : INFO  : Node Repository Initializer :  : TagFactory :  :  : Added TagBuilder: class org.knime.ext.textprocessing.data.OscarChemDefaultTag
+2026-04-02 10:52:15,811 : INFO  : Node Repository Initializer :  : TagFactory :  :  : Added TagBuilder: class org.knime.ext.textprocessing.data.PharmaDefaultTag
+2026-04-02 10:52:15,812 : INFO  : Node Repository Initializer :  : TagFactory :  :  : Added TagBuilder: class org.knime.ext.textprocessing.data.FrenchTreebankTag
+2026-04-02 10:52:15,812 : INFO  : Node Repository Initializer :  : TagFactory :  :  : Added TagBuilder: class org.knime.ext.textprocessing.data.STTSPartOfSpeechTag
+2026-04-02 10:52:15,812 : INFO  : Node Repository Initializer :  : TagFactory :  :  : Added TagBuilder: class org.knime.ext.textprocessing.data.SentimentTag
+2026-04-02 10:52:16,789 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_createFileNameHistoryKey.txt' does not exist.
+2026-04-02 10:52:17,178 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=athena, name=Amazon Athena, description=null)
+2026-04-02 10:52:17,526 : INFO  : Node Repository Initializer :  : DBDriverRegistry :  :  : Could not find any driver for DBType: DBType(id=bigquery, name=Google BigQuery, description=Google BigQuery)
+2026-04-02 10:52:17,713 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_DocumentExtractorFileHistory.txt' does not exist.
+2026-04-02 10:52:17,713 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_DocumentExtractorURLHistory.txt' does not exist.
+2026-04-02 10:52:17,715 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_jcart_database_urls.txt' does not exist.
+2026-04-02 10:52:19,254 : INFO  : Thread-1566 :  : Server :  :  : jetty-12.0.21; built: 2025-05-09T00:32:00.688Z; git: 1c4719601e31b05b7d68910d2edd980259f1f53c; jvm 21.0.9+10-LTS
+2026-04-02 10:52:19,274 : INFO  : Thread-1566 :  : AbstractConnector :  :  : Started ServerConnector@20739bca{HTTP/1.1, (http/1.1)}{0.0.0.0:63615}
+2026-04-02 10:52:19,274 : INFO  : Thread-1566 :  : Server :  :  : Started oejs.Server@61b8a3e8{STARTING}[12.0.21,sto=0] @25714ms
+2026-04-02 10:52:19,274 : INFO  : Thread-1566 :  : OAuthAuthenticator :  :  : Opening browser to perform authentication for 'https://api.hub.knime.com'.
+2026-04-02 10:52:19,358 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_ECFPHistory.txt' does not exist.
+2026-04-02 10:52:19,364 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_JChemExternalToolHistory.txt' does not exist.
+2026-04-02 10:52:19,380 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_ReactorHistory.txt' does not exist.
+2026-04-02 10:52:19,384 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_PdbImporterHistory.txt' does not exist.
+2026-04-02 10:52:19,407 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_JC4OWriterHistory.txt' does not exist.
+2026-04-02 10:52:19,409 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_MolImporterHistory.txt' does not exist.
+2026-04-02 10:52:19,411 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_PharmacophoreFingerprintHistory.txt' does not exist.
+2026-04-02 10:52:19,422 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_JC4XLWriterHistory.txt' does not exist.
+2026-04-02 10:52:19,423 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_JC4XLReaderHistory.txt' does not exist.
+2026-04-02 10:52:19,424 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_jcman_database_dirs.txt' does not exist.
+2026-04-02 10:52:19,424 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_jcman_database_urls.txt' does not exist.
+2026-04-02 10:52:24,343 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_ShapeDescriptorHistory.txt' does not exist.
+2026-04-02 10:52:24,472 : ERROR : Node Repository Initializer :  : MolSimilarityNodeModel :  :  : No license file was found.
+Product name: Molecular Descriptors
+Licenses are read from: 
+Please visit https://docs.chemaxon.com/display/docs/about-chemaxon-licensing.md or contact sales@chemaxon.com to obtain the corresponding license.
+
+2026-04-02 10:52:24,486 : ERROR : Node Repository Initializer :  : MolSimilarityNodeModel :  :  : No license file was found.
+Product name: ECFP/FCFP
+Licenses are read from: 
+Please visit https://docs.chemaxon.com/display/docs/about-chemaxon-licensing.md or contact sales@chemaxon.com to obtain the corresponding license.
+
+2026-04-02 10:52:24,510 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_JC4OReaderHistory.txt' does not exist.
+2026-04-02 10:52:24,539 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_MolExporterHistory.txt' does not exist.
+2026-04-02 10:52:25,095 : INFO  : Node Repository Initializer :  : StringHistory :  :  : History file '/Users/joaopedrobarbosa/Documents/Mestrado/BMT/git/bmt261_knime_binary_classification/.metadata/knime/history_jpcart_database_urls.txt' does not exist.
+2026-04-02 10:52:27,805 : INFO  : Thread-1582 :  : Server :  :  : Stopped oejs.Server@61b8a3e8{STOPPING}[12.0.21,sto=0]
+2026-04-02 10:52:27,855 : INFO  : Thread-1582 :  : AbstractConnector :  :  : Stopped ServerConnector@20739bca{HTTP/1.1, (http/1.1)}{0.0.0.0:63615}
+2026-04-02 10:52:35,434 : INFO  : ModalContext :  : FilterOperatorsRegistry : Row Filter : 3:18 : Experimental Row Filter extension point "org.knime.core.ui.filterOperators" is disabled for 3rd party extensions: To enable it, set the system property "org.knime.core.ui.filterOperators.enableExperimentalExtensionPoint" to "true".
