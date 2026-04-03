@@ -1,6 +1,6 @@
 # Classificação de Sentimentos em Texto com KNIME
 
-Pipeline de Text Mining com Naive Bayes e TF-IDF para classificação binária de sentimentos, desenvolvido como trabalho da disciplina BMT261 no Programa de Engenharia de Sistemas e Computação (COPPE/UFRJ).
+Pipeline de Text Mining com Naive Bayes e TF-IDF para classificação binária de sentimentos, desenvolvido como trabalho da disciplina COS738 - 2026/1 - Busca e Mineração de Texto no Programa de Engenharia de Sistemas e Computação (COPPE/UFRJ).
 
 ## Visão Geral
 
